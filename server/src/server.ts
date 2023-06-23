@@ -11,7 +11,7 @@ const app = express();
 const PORT = 3000;
 
 // Enable CORS
-app.use(cors());
+// app.use(cors());
 
 // Sample data for members
 const members: Member[] = [

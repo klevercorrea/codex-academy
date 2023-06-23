@@ -1,7 +1,25 @@
+import { useEffect, useState } from 'react';
 import './App.css'
 import { TeamCard } from './components/TeamCard'
 
 function App() {
+  const [members, setMembers] = useState([]);
+
+  useEffect(() => {
+    async function fetchMembers() {
+      try {
+        const response = await fetch('http://localhost:3000/members');
+        const data = await response.json();
+        setMembers(data);
+      } catch (error) {
+        console.error('Error fetching members:', error);
+      }
+    }
+
+    fetchMembers();
+  }, []);
+
+  console.log('members:', members);
 
   return (
     <>
