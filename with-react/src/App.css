@@ -1,0 +1,46 @@
+.team-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .team-card .name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .team-card .title {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .team-card .like-button {
+    background-color: #FFF;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .team-card .like-button svg {
+    stroke: #3b82f6;
+  }
+  
+  .team-card .like-button:hover svg {
+    stroke: #1d4ed8;
+  }
+  
